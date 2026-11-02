@@ -1,0 +1,117 @@
+== STEP 3: BUILD + RUN ==
+2026-11-02T07:40:21Z
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.46kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1.7
+#2 DONE 0.8s
+
+#3 docker-image://docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
+#3 resolve docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/node:20-alpine
+#4 DONE 0.8s
+
+#5 [internal] load metadata for docker.io/library/alpine:3.20
+#5 DONE 0.8s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 137B done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 DONE 0.0s
+
+#8 [runner 1/7] FROM docker.io/library/alpine:3.20@sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc
+#8 resolve docker.io/library/alpine:3.20@sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc 0.0s done
+#8 DONE 0.0s
+
+#9 [builder 1/7] FROM docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293
+#9 resolve docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293
+#9 resolve docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293 0.0s done
+#9 DONE 0.1s
+
+#8 [runner 1/7] FROM docker.io/library/alpine:3.20@sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc
+#8 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 219B done
+#7 DONE 0.0s
+
+#10 [builder 3/7] COPY package.json package-lock.json ./
+#10 CACHED
+
+#11 [builder 5/7] COPY tsconfig.json ./
+#11 CACHED
+
+#12 [builder 2/7] WORKDIR /app
+#12 CACHED
+
+#13 [builder 4/7] RUN npm ci
+#13 CACHED
+
+#14 [builder 6/7] COPY src ./src
+#14 CACHED
+
+#15 [builder 7/7] RUN npm run build  && npm prune --omit=dev  && npm cache clean --force
+#15 CACHED
+
+#16 [runner 2/7] RUN apk add --no-cache libstdc++  && addgroup -S app  && adduser -S -G app -H -s /sbin/nologin app
+#16 0.244 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+#16 0.323 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+#16 0.621 (1/2) Installing libgcc (13.2.1_git20240309-r1)
+#16 0.626 (2/2) Installing libstdc++ (13.2.1_git20240309-r1)
+#16 0.646 OK: 10 MiB in 16 packages
+#16 DONE 0.8s
+
+#17 [runner 3/7] COPY --from=builder /usr/local/bin/node /usr/local/bin/node
+#17 DONE 2.1s
+
+#18 [runner 4/7] WORKDIR /app
+#18 DONE 0.0s
+
+#19 [runner 5/7] COPY --from=builder --chown=app:app /app/package.json ./package.json
+#19 DONE 0.1s
+
+#20 [runner 6/7] COPY --from=builder --chown=app:app /app/node_modules ./node_modules
+#20 DONE 0.5s
+
+#21 [runner 7/7] COPY --from=builder --chown=app:app /app/dist ./dist
+#21 DONE 0.1s
+
+#22 exporting to image
+#22 exporting layers
+#22 exporting layers 2.9s done
+#22 exporting manifest sha256:d9e910d7656a5d2fa6ff5abbfec0a39887a07a6d121e9e5f2dd3e9806393bc69 0.0s done
+#22 exporting config sha256:c71f260be71814f399618ee1a38fff90464311bde6a027e1dafb5051711d072d 0.0s done
+#22 exporting attestation manifest sha256:778733958882c343f4cd565eb4e97b4fa775c91433705f9fa75a0d0925b6b9d7 0.0s done
+#22 exporting manifest list sha256:d8b62093018ac569d993f8600b76cc506a326c4cf9f35ddac5f87770f0ea75a7 0.0s done
+#22 naming to ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0 done
+#22 unpacking to ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0
+#22 unpacking to ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0 1.1s done
+#22 DONE 4.2s
+arch=amd64 os=linuxbytes=171408356 student=20011000
+eb71370cbc57dd728861732ad4ff21d5ce1d1ee5bcd119cbb3e9f52bd15c6ee9
+Waiting for the app to start...
+--- /info ---
+{"service":"vlsc-s05-api","appEnv":"production","studentId":"20011000","hostname":"eb71370cbc57","arch":"x64","platform":"linux","nodeVersion":"v20.20.2","uptimeSeconds":4}
+--- /health ---
+http=200
+--- user (must be DIFFERENT root) ---
+uid=100(app) gid=101(app) groups=101(app)
+--- limits (must be 268435456) ---
+268435456
+--- logs ---
+vlsc-s05-api listening on 0.0.0.0:3000 env=production
+Waiting 35s for Docker to run Healthcheck...
+--- health status (Must be healthy) ---
+unknown flag: --format{{.State.Health.Status}}
+
+Usage:  docker inspect [OPTIONS] NAME|ID [NAME|ID...]
+
+Run 'docker inspect --help' for more information
+{"service":"vlsc-s05-api","appEnv":"dev","studentId":"UNSET","hostname":"9321efdbbd6f","arch":"x64","platform":"linux","nodeVersion":"v20.20.2","uptimeSeconds":2}{"service":"vlsc-s05-api","appEnv":"dev","studentId":"UNSET","hostname":"9932852ff410","arch":"x64","platform":"linux","nodeVersion":"v20.20.2","uptimeSeconds":2}

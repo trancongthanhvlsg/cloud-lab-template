@@ -1,0 +1,7 @@
+== STEP 5: PAAS VERIFICATION ==
+2026-11-02T08:44:10Z
+RENDER_URL=https://vlsc-s05-api-1-0-0.onrender.com
+--- /health (first call may take ~1 min: free-tier cold start) ---
+http=200 total=0.105579s
+--- /info ---
+{"service":"vlsc-s05-api","appEnv":"production","studentId":"20011000","hostname":"srv-dbk4p07f3r2c738mkg00-hibernate-7655bc496d-cbb9b","arch":"x64","platform":"linux","nodeVersion":"v20.20.2","uptimeSeconds":197}

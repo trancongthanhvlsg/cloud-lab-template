@@ -1,0 +1,109 @@
+== STEP 4: PUSH TO GHCR ==
+2026-11-02T08:25:45Z
+The push refers to repository [ghcr.io/trancongthanhvlsg/vlsc-s05-api]
+ed0f94241280: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+ed0f94241280: Waiting
+ed0f94241280: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+25f1d6b1951a: Waiting
+ed0f94241280: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+ed0f94241280: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+ed0f94241280: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+ed0f94241280: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+ed0f94241280: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+ed0f94241280: Waiting
+ed0f94241280: Waiting
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Waiting
+ed0f94241280: Already exists
+44136fa355b3: Waiting
+b6645d45bf10: Waiting
+25f1d6b1951a: Layer already exists
+cfee50050288: Waiting
+ffe12051fb21: Waiting
+b6645d45bf10: Layer already exists
+1ce223c8d9a0: Waiting
+cfee50050288: Waiting
+ffe12051fb21: Waiting
+0d62d1d5a481: Waiting
+ec8bd6ab470d: Waiting
+44136fa355b3: Already exists
+cfee50050288: Waiting
+ffe12051fb21: Waiting
+0d62d1d5a481: Waiting
+ec8bd6ab470d: Waiting
+1ce223c8d9a0: Waiting
+ec8bd6ab470d: Waiting
+1ce223c8d9a0: Waiting
+cfee50050288: Layer already exists
+ffe12051fb21: Layer already exists
+0d62d1d5a481: Waiting
+1ce223c8d9a0: Layer already exists
+0d62d1d5a481: Layer already exists
+ec8bd6ab470d: Layer already exists
+1.0.0: digest: sha256:d8b62093018ac569d993f8600b76cc506a326c4cf9f35ddac5f87770f0ea75a7 size: 856
+--- registry manifest ---
+Name:      ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0
+MediaType: application/vnd.oci.image.index.v1+json
+Digest:    sha256:d8b62093018ac569d993f8600b76cc506a326c4cf9f35ddac5f87770f0ea75a7
+           
+Manifests: 
+  Name:        ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0@sha256:d9e910d7656a5d2fa6ff5abbfec0a39887a07a6d121e9e5f2dd3e9806393bc69
+  MediaType:   application/vnd.oci.image.manifest.v1+json
+  Platform:    linux/amd64
+               
+  Name:        ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0@sha256:778733958882c343f4cd565eb4e97b4fa775c91433705f9fa75a0d0925b6b9d7
+  MediaType:   application/vnd.oci.image.manifest.v1+json
+  Platform:    unknown/unknown
+  Annotations: 
+    vnd.docker.reference.digest: sha256:d9e910d7656a5d2fa6ff5abbfec0a39887a07a6d121e9e5f2dd3e9806393bc69
+    vnd.docker.reference.type:   attestation-manifest
+DIGEST=Digest:    sha256:d8b62093018ac569d993f8600b76cc506a326c4cf9f35ddac5f87770f0ea75a7
+--- anonymous pull ---
+bash: credentials: command not found
+1.0.0: Pulling from trancongthanhvlsg/vlsc-s05-api
+Digest: sha256:d8b62093018ac569d993f8600b76cc506a326c4cf9f35ddac5f87770f0ea75a7
+Status: Image is up to date for ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0
+ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0
+
+bash: ANON_PULL=OK: command not found
+ANON_PULL=FAILED
+--- anonymous pull ---
+1.0.0: Pulling from trancongthanhvlsg/vlsc-s05-api
+Digest: sha256:d8b62093018ac569d993f8600b76cc506a326c4cf9f35ddac5f87770f0ea75a7
+Status: Image is up to date for ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0
+ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0
+bash: echoANON_PULL=OK: command not found
+ANON_PULL=FAILED
+--- anonymous pull ---
+1.0.0: Pulling from trancongthanhvlsg/vlsc-s05-api
+Digest: sha256:d8b62093018ac569d993f8600b76cc506a326c4cf9f35ddac5f87770f0ea75a7
+Status: Image is up to date for ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0
+ghcr.io/trancongthanhvlsg/vlsc-s05-api:1.0.0
+ANON_PULL=OK
